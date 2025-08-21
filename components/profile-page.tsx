@@ -103,7 +103,7 @@ export function ProfilePage() {
       }
 
       const data = await response.json()
-      console.log("[v0] API Response:", data)
+      console.log(" API Response:", data)
       setProfile(data)
     } catch (err) {
       setError(err instanceof Error ? err.message : "An error occurred")
@@ -114,7 +114,7 @@ export function ProfilePage() {
   }
 
   const handleSendEmail = () => {
-    console.log("[v0] Sending email:", emailForm)
+    console.log(" Sending email:", emailForm)
     // Email sending logic would go here
   }
 
